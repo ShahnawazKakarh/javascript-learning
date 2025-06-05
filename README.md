@@ -17,14 +17,18 @@ Welcome to my JavaScript practice repo! Here I’m exploring core JavaScript con
 
 ---
 
-## 📁 Folder Structure
+## 🛠 Tools Used
 
-📦javascript-learning
-┣ 📂basics
-┃ ┗ 📄 variables.js
-┣ 📂arrays
-┃ ┗ 📄 array-methods.js
-┣ 📂projects
-┃ ┣ 📄 
-┃ ┗ 📄 
-┗ 📄 README.md
+- [VS Code](https://code.visualstudio.com/)
+- [Git](https://git-scm.com/)
+- [GitHub](https://github.com/)
+
+---
+
+## 🌟 How to Run the Projects
+
+```bash
+# Clone the repo
+git clone https://github.com/ShahnawazKakarh/javascript-learning.git
+
+# Open any HTML file in your browser (or use Live Server)
