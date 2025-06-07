@@ -7,10 +7,7 @@
 
 // By Value (Primitive Data Types)
 // The actual value is stored in the variable, and a copy is created when assigned to another variable.
-
-// By Reference (Non-Primitive Data Types)
-// The variable stores a reference (or address) pointing to the actual data in memory.
-// When assigned to another variable, both variables point to the same data.
+// Primitive values don’t track history — they’re just copied at the time of assignment.
 
 //  Primitive also known as  - Call by Value
 // Primitive data types are the basic, built-in types in JavaScript that store actual values directly in the variable.
@@ -34,8 +31,17 @@ let userEmail;
 
 const id = Symbol('123')
 const anotherId = Symbol('123')
+console.log(id)
+console.log(anotherId)
 
+console.log(typeof(id))
+console.log(typeof(anotherId))
+
+// Reason
+// 1- Symbols are always unique.
+// 2- Even if two symbols have the same description, value or data type, they are not equal.
 console.log(id === anotherId);
+
 
 // const bigNumber = 3456543576654356754n
 
@@ -46,6 +52,10 @@ console.log(id === anotherId);
 
 // English: Non-primitive data types are those where the actual value is not stored directly in the variable, but a reference to the value in memory is stored.
 // Urdu/Hindi: Yeh sari wo values hain jinka reference humen memory main directly allocate kia ja sakta hai
+
+// By Reference (Non-Primitive Data Types)
+// The variable stores a reference (or address) pointing to the actual data in memory.
+// When assigned to another variable, both variables point to the same data.
 
 // Array, Objects, Functions
 
