@@ -8,8 +8,9 @@ flowchart LR
     myYoutubeName2[ myYoutubeName ]
   end
 
+
   subgraph Heap
-    obj[ email: shahnawaz(at)google.com\nage: 22\ncity: Lahore ]
+    object1[Object in Heap:\nemail, age, city]
   end
 
   userTwo --> object1
