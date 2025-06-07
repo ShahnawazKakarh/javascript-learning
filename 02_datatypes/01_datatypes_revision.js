@@ -60,6 +60,7 @@ console.log(id === anotherId);
 // Array, Objects, Functions
 
 const heros = ["shaktiman", "naagraj", "doga"];
+
 let myObj = {
     name: "hitesh",
     age: 22,
