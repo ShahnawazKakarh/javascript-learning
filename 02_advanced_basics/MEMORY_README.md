@@ -10,7 +10,7 @@ flowchart LR
 
 
   subgraph Heap
-    object1[Object in Heap:\nemail, age, city]
+    object1[Object in Heap: email, age, city]
   end
 
   userTwo --> object1
