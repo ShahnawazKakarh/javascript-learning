@@ -1,6 +1,12 @@
-//  Primitive
+// Data ko memeory main kaise rakha jata aur access kia jata uaski 2 types hain as FOLLOWS:
 
-//  7 types : String, Number, Boolearn, null, undefined, Symbol, BigInt
+//  Primitive also known as  - Call by Value
+
+// kahen se kahen copy krty, enka original data, wo reference humen memory ka nhn dia jata,
+// humen uaski copy di jati hai, aur ju bhe hum changes karty hain copy main karty hain
+
+
+//  7 types : String, Number, Boolearn, Null, undefined, Symbol, BigInt
 
 const score = 100
 const scoreValue = 100.3
@@ -18,7 +24,7 @@ console.log(id === anotherId);
 
 
 
-// Reference (Non primitive)
+// Reference (Non primitive) - Call by Reference
 
 // Array, Objects, Functions
 
