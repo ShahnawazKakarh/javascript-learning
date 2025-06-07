@@ -11,12 +11,12 @@
 
 // Store by VALUE
 let myYoutubeName = "ShahnawazKhan"
-let anotherYoutubeName = myYoutubeName
+let anothername = myYoutubeName
 
-anotherYoutubeName = "JS Youtube Channel"
+anothername = "JS Youtube Channel"
 
 console.log(myYoutubeName)
-console.log(anotherYoutubeName)
+console.log(anothername)
 
 // Stored by REFERENCE
 let user = {

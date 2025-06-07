@@ -9,7 +9,7 @@ flowchart LR
   end
 
   subgraph Heap
-    object1[Object in Heap:\nemail, upi]
+    obj[ email: shahnawaz@google.com\nage: 22\ncity: Lahore ]
   end
 
   userTwo --> object1
