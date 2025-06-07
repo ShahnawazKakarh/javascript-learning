@@ -1,4 +1,5 @@
-// Dates
+/* ******************************************** DATE() *********************************************** */
+
 
 let myDate = new Date()
 
@@ -24,3 +25,30 @@ console.log(myDate.toLocaleTimeString())
 let myNewDate = new Date(2025, 5, 8)
 console.log(myNewDate)
 console.log(myNewDate.toDateString())
+
+// YY-MM-DD
+let myLatestDate = new Date("2025-06-08")
+
+// 2025-06-08T00:00:00.000Z
+console.log(myLatestDate)
+
+// Sun Jun 08 2025
+console.log(myLatestDate.toDateString())
+
+// 6/8/2025, 12:00:00 AM
+console.log(myLatestDate.toLocaleString())
+
+// MM-DD-YY
+let myLocalDate = new Date("06-08-2025")
+
+// 6/8/2025, 12:00:00 AM
+console.log(myLocalDate.toLocaleString())
+
+// timestamp
+// Returns the current timestamp: number of milliseconds since Jan 1, 1970 e.g., 1748324120000
+let myTimeStamp = Date.now()
+console.log(myTimeStamp);   // Current time in milliseconds
+console.log(myLocalDate.getTime());   // Time in milliseconds for June 8, 2025
+
+
+/* ******************************************** Time() *********************************************** */

@@ -1,4 +1,4 @@
-// Number
+/* ******************************************** NUMBER DATA TYPE *********************************************** */
 
 // variable data type is number but it will print as string
 const score = 400
