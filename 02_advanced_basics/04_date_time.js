@@ -44,11 +44,29 @@ let myLocalDate = new Date("06-08-2025")
 // 6/8/2025, 12:00:00 AM
 console.log(myLocalDate.toLocaleString())
 
+
+/* ******************************************** TimeStamp() *********************************************** */
+
+
 // timestamp
 // Returns the current timestamp: number of milliseconds since Jan 1, 1970 e.g., 1748324120000
 let myTimeStamp = Date.now()
 console.log(myTimeStamp);   // Current time in milliseconds
 console.log(myLocalDate.getTime());   // Time in milliseconds for June 8, 2025
 
+// convert time from miliseconds to seconds
+// It will give value in decimal like 1749329722.027
+console.log(Date.now()/1000)
 
-/* ******************************************** Time() *********************************************** */
+// to remove decimal like 1749329760
+console.log(Math.floor(Date.now()/1000))
+
+// if we want to know specific info from date
+console.log(myDate.getDate())
+console.log(myDate.getDay())
+
+// customise the format of date of toLocaleString()
+console.log(myDate.toLocaleString('default', {
+    weekday: "long",
+    
+}))
