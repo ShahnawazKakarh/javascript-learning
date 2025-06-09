@@ -58,4 +58,5 @@ JsUser.greeting = function(){
     return "Hello JS user";
 }
 
+// now it is just printing Hello JS user
 console.log(JsUser.greeting()); 

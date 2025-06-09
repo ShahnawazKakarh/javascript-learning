@@ -1,11 +1,21 @@
-// const tinderUser = new Object()
-const tinderUser = {}
+// Following both are types to create an object, there is no difference both have empty string
+
+// Type 1: Singleton: A singleton is an object that is created only once in your program — and everywhere you use it, you reference that same single instance.
+// Useful for config, settings, cache
+
+// Type 2: Non-Singleton: A non-singleton object is any object where you create a new instance each time. They are not globally shared — each object is unique.
+// Useful for entities (users, items)
+
+
+const tinderUserS = new Object()  // singelton object
+const tinderUserNS = {}  // non-singelton object
+// console.log(tinderUser);
+
 
 tinderUser.id = "123abc"
 tinderUser.name = "Sammy"
 tinderUser.isLoggedIn = false
 
-// console.log(tinderUser);
 
 const regularUser = {
     email: "some@gmail.com",
