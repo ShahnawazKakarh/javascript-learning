@@ -1,5 +1,9 @@
 // singleton
-// Object.create
+// when we create object via constructor it is singleton, apne trha ka aik hei hai, while in literal it have multiple instances
+
+
+// creating object using constructor
+Object.create
 
 // object literals
 
@@ -7,32 +11,51 @@ const mySym = Symbol("key1")
 
 
 const JsUser = {
-    name: "Hitesh",
-    "full name": "Hitesh Choudhary",
+    name: "Shahnawaz",
+    "full name": "Shahnawaz Khan",
     [mySym]: "mykey1",
     age: 18,
-    location: "Jaipur",
-    email: "hitesh@google.com",
+    location: "Lahore",
+    email: "shahnawaz@google.com",
     isLoggedIn: false,
     lastLoginDays: ["Monday", "Saturday"]
 }
 
-// console.log(JsUser.email)
-// console.log(JsUser["email"])
-// console.log(JsUser["full name"])
-// console.log(JsUser[mySym])
+console.log(JsUser.email)
+console.log(JsUser["email"])
+console.log(JsUser["full name"])  // Shahnawaz Khan
+console.log(JsUser["mySym"])  // undefined
+console.log(JsUser[mySym])  // mykey1
 
-JsUser.email = "hitesh@chatgpt.com"
+JsUser.email = "khan@chatgpt.com"
+
+// if Object.freeze() is applied anywhere for any object or value it will not change it will be freezed
 // Object.freeze(JsUser)
-JsUser.email = "hitesh@microsoft.com"
-// console.log(JsUser);
+// JsUser.email = "khan@microsoft.com"
+console.log(JsUser); // email: 'khan@chatgpt.com',
 
+// undefined was printed. It is because function "greeting" does not return anything (no return keyword).
+// In JavaScript, if a function doesn't explicitly return a value, it returns undefined by default.
 JsUser.greeting = function(){
     console.log("Hello JS user");
 }
+
+// string interpolation javascript is used here ` `
 JsUser.greetingTwo = function(){
     console.log(`Hello JS user, ${this.name}`);
 }
 
+// Hello JS user
+// undefined
 console.log(JsUser.greeting());
+
+// Hello JS user, Shahnawaz
+// undefined
 console.log(JsUser.greetingTwo());
+
+// to remove undefined here is it an example:
+JsUser.greeting = function(){
+    return "Hello JS user";
+}
+
+console.log(JsUser.greeting()); 
