@@ -1,4 +1,6 @@
 // Arrays
+// In JavaScript, an array is a type of object used to store an ordered collection of data.
+// It can hold various data types, including numbers, strings, objects, and even other arrays.
 
 // array
 const myArr = [0, 1, 2, 3, 4, 5]
