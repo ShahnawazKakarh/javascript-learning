@@ -99,12 +99,12 @@ const course = {
 }
 
 // to destructure any value
+course.courseInstructor
 
-// course.courseInstructor
+const {courseInstructor} = course
+console.log(courseInstructor);
 
 const {courseInstructor: instructor} = course
-
-// console.log(courseInstructor);
 console.log(instructor);
 
 // {
