@@ -62,8 +62,12 @@ function addone(num){
 }
 
 
+// function hoisting: like where we can put the function
+// like in this example it is function but kind of expression as function is hold in addTwo so in such case
+// it will not return addTwo() if written before function
 
 addTwo(5)
+
 const addTwo = function(num){
     return num + 2
 }
