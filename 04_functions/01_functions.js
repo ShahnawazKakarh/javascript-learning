@@ -10,11 +10,16 @@ function sayMyName(){
 
 sayMyName()
 
-// function addTwoNumbers(number1, number2){
+// number1, number2 are parameters
+function addTwoNumbers(number1, number2){
 
-//     console.log(number1 + number2);
-// }
+    console.log(number1 + number2);
+}
 
+// here 3 and 5 are arguments
+addTwoNumbers(3, 5)
+
+// if function is not returned it will not return the value
 function addTwoNumbers(number1, number2){
 
     // let result = number1 + number2
@@ -23,11 +28,11 @@ function addTwoNumbers(number1, number2){
 }
 
 const result = addTwoNumbers(3, 5)
-
-// console.log("Result: ", result);
+console.log("Result: ", result);
 
 
 function loginUserMessage(username = "sam"){
+    // if (username === undefined){}
     if(!username){
         console.log("PLease enter a username");
         return
@@ -35,16 +40,18 @@ function loginUserMessage(username = "sam"){
     return `${username} just logged in`
 }
 
-// console.log(loginUserMessage("hitesh"))
-// console.log(loginUserMessage("hitesh"))
+console.log(loginUserMessage("Shahnawaz"))
 
 
-function calculateCartPrice(val1, val2, ...num1){
+// rest operater for handling multiple values in parameter
+// val1, val2, 
+function calculateCartPrice(...num1){
     return num1
 }
 
-// console.log(calculateCartPrice(200, 400, 500, 2000))
+console.log(calculateCartPrice(200, 400, 500, 2000))
 
+// objects to pass in function
 const user = {
     username: "hitesh",
     prices: 199
@@ -60,11 +67,13 @@ handleObject({
     price: 399
 })
 
+// handling array in funciton
 const myNewArray = [200, 400, 100, 600]
 
 function returnSecondValue(getArray){
     return getArray[1]
 }
 
-// console.log(returnSecondValue(myNewArray));
+// we can get value by using both styles they are same
+console.log(returnSecondValue(myNewArray));
 console.log(returnSecondValue([200, 400, 500, 1000]));
