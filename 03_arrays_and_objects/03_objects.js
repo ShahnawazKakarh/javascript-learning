@@ -25,7 +25,7 @@ console.log(JsUser.email)
 console.log(JsUser["email"])
 console.log(JsUser["full name"])  // Shahnawaz Khan
 console.log(JsUser["mySym"])  // undefined
-console.log(JsUser[mySym])  // mykey1
+console.log(JsUser[mySym])  // symbol(mykey1)
 
 JsUser.email = "khan@chatgpt.com"
 
@@ -37,6 +37,7 @@ console.log(JsUser); // email: 'khan@chatgpt.com',
 
 // undefined was printed. It is because function "greeting" does not return anything (no return keyword).
 // In JavaScript, if a function doesn't explicitly return a value, it returns undefined by default.
+// function can be used as a variable in JS
 JsUser.greeting = function(){
     console.log("Hello JS user");
 }
