@@ -5,8 +5,7 @@
 // creating object using constructor
 Object.create
 
-// object literals
-
+// In this file I have practiced the object literals
 const mySym = Symbol("key1")
 
 

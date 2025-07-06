@@ -8,7 +8,7 @@
 // Useful for entities (users, items)
 
 
-// const tinderUserS = new Object()  // singelton object
+// const tinderUserS = new Object()  // singelton object - object created via constructor
 // const tinderUserNS = {}  // non-singelton object
 
 const tinderUser = {}
@@ -53,13 +53,14 @@ const obj4 = {
 // so we use assign() which gives us a single object
 // assign(target, source)
 // target will be {} while source will be obj1, obj2, obj4
-// const obj3 = Object.assign({}, obj1, obj2, obj4)
+const obj3 = Object.assign({}, obj1, obj2, obj4)
+console.log(obj3);
 
 // spread operator
-const obj3 = {...obj1, ...obj2}
-// console.log(obj3);
+const obj5 = {...obj1, ...obj2}
+console.log(obj5);
 
-
+// dummy example for database records
 const users = [
     {
         id: 1,
@@ -86,11 +87,14 @@ console.log(Object.keys(tinderUser));
 // [ '123abc', 'Sammy', false ]
 console.log(Object.values(tinderUser));
 
-// every key value pair is framed in Array first value will be key and second will be value
+// array within array
+// every key value pair is framed in Array in such a way that first value will be key and second will be value
 // [ [ 'id', '123abc' ], [ 'name', 'Sammy' ], [ 'isLoggedIn', false ] ]
 console.log(Object.entries(tinderUser));
 
-// console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+// if want to verify that particular object has its any value or property
+console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+console.log(tinderUser.hasOwnProperty('isLoggedOut'));
 
 
 const course = {
