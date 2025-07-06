@@ -104,13 +104,23 @@ const course = {
 }
 
 // to destructure any value
+// to get any single value from object like we have course we want to extract courseInstructor, call course.courseInstructor
 course.courseInstructor
 
+// so to destructure it and not to type it again we can do following:
 const {courseInstructor} = course
 console.log(courseInstructor);
 
 const {courseInstructor: instructor} = course
 console.log(instructor);
+
+
+// SYNTAX WE CAN USE IN REACT
+// In react we have to use props.propertyname to call the object property so to avoid in react we use following way
+
+// const navbar = ({company}) => {
+// }
+// navbar(company = "Shahnawaz")
 
 // {
 //     "name": "hitesh",
