@@ -31,6 +31,7 @@ JsUser.email = "khan@chatgpt.com"
 
 // if Object.freeze() is applied anywhere for any object or value it will not change it will be freezed
 // Object.freeze(JsUser)
+// if we have input email and we then freeze it, even on changing the email it will not allow to change
 // JsUser.email = "khan@microsoft.com"
 console.log(JsUser); // email: 'khan@chatgpt.com',
 
