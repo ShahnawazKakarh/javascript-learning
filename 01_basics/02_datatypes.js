@@ -10,7 +10,7 @@ alert (3 + 3) // it is being used in browser but here we are using nodejs
 // Boolean => true/false
 // null => standalone value / type, "" is not null its string, you have to define null to identify null
 // undefined => variable assign kia hai but uasko value nhn assign ki
-// Symbol => to find uniqueness
+// Symbol => to find uniqueness,make multiple components, figma tool, to define individual component
 // Object => 
 
 console.log(typeof "Kakarh") // => String
