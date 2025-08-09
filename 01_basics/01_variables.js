@@ -2,12 +2,12 @@ const accountId = 123
 
 let accountEmail = "shahnawaz@google.com"
 var accountPassword = "shahnawaz"
-accountCity = "Lahore"
+accountCity = "Lahore" // not recommended but variable can be declared like this too
 
 // accountId = 2 // TypeError: Assignment to constant variable. accountId is already declared with CONST which can't be changed.
 
 
-let accountState;
+let accountState; // if we declare a variable and not assign any value then it is considered as undefined.
 
 accountEmail = "hr@google.com"
 accountPassword = "123"
@@ -27,6 +27,7 @@ let = can be re-assigned a value but can't be declared again. (so, it is a block
 var = it can be re-assigned a value and it can also be declared again. (It has a Global scope)
 
 => Never use var in your code instead of let because of block and functional scope issues.
+
 # console.table([group of variables you want to show in tabular form])
 
 */
