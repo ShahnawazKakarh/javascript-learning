@@ -1,6 +1,6 @@
 // "use Strict"; // treat all JS code as new version
 
-// alert (3 + 3) // it is being used in browser but here we are using nodejs
+alert (3 + 3) // it is being used in browser but here we are using nodejs
 
 // Data Types
 
@@ -8,14 +8,14 @@
 // BigInt => mainly used in trading apps
 // String => ""
 // Boolean => true/false
-// null => standalone value, "" is not null its string, you have to define null to identify null
+// null => standalone value / type, "" is not null its string, you have to define null to identify null
 // undefined => variable assign kia hai but uasko value nhn assign ki
 // Symbol => to find uniqueness
 // Object => 
 
-// console.log(typeof "Kakarh") => String
-// console.log(typeof undefined) = > undefined={}
-// console.log(typeof null) => Object
+console.log(typeof "Kakarh") // => String
+console.log(typeof undefined) // = > undefined={}
+console.log(typeof null) // => Object
 
 
 // TYPE OF DATA TYPE VALUES WHILE CHANGING THEM
